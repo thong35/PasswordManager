@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Password Manager</h1>
+  </header>
+
+  <main class="container">
+    <!-- Add manually -->
+    <section class="add-password">
+      <h2>Add New Password</h2>
+      <input type="text" id="accountName" placeholder="Account Name">
+      <input type="text" id="passwordValue" placeholder="Password">
+      <input type="text" id="tag" placeholder="Tag (Work, Gaming, etc)">
+      <button onclick="savePassword()">Save</button>
+    </section>
+
+    <!-- View saved -->
+    <section class="password-list">
+      <h2>Saved Passwords</h2>
+      <div id="passwords"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
